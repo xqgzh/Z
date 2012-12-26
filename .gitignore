@@ -1,0 +1,6 @@
+/bin
+/obj
+/Z.Test/obj
+/Z.Test/bin
+/*.suo
+/*.user

@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EEC5D1E0-DBDB-4C9B-87D9-F77DE2294EDC}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Z</RootNamespace>
+    <AssemblyName>Z</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <PublishUrl>http://localhost/Z/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <DocumentationFile>bin\Debug\Z.XML</DocumentationFile>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\Z.XML</DocumentationFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL" />
+    <Reference Include="Memcached.ClientLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=42c0400964dcc297, processorArchitecture=MSIL" />
+    <Reference Include="mysql.data, Version=6.2.2.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Caching\CacheConfiguration.cs" />
+    <Compile Include="C\FtpConfiguration.cs" />
+    <Compile Include="DA\DB\JetDB.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="REST\CachedKeyAttribute.cs" />
+    <Compile Include="REST\CachedMethodAttribute.cs" />
+    <Compile Include="Caching\CachePool.cs" />
+    <Compile Include="Caching\DotNetCacheManager.cs" />
+    <Compile Include="Caching\ICacheManager.cs" />
+    <Compile Include="Caching\MemcachedManager.cs" />
+    <Compile Include="C\AppConfigHandler.cs" />
+    <Compile Include="C\MessageQueueConfig.cs" />
+    <Compile Include="C\RemoteConfig.cs" />
+    <Compile Include="C\ScheduleConfiguration.cs" />
+    <Compile Include="C\ThreadConfiguration.cs" />
+    <Compile Include="C\WebServerConfiguration.cs" />
+    <Compile Include="DA\AbstractConnection.cs" />
+    <Compile Include="DA\AbstractDA.cs" />
+    <Compile Include="DA\AbstractTable.cs" />
+    <Compile Include="DA\DatabaseCache.cs" />
+    <Compile Include="DA\DatabaseConfiguration.cs" />
+    <Compile Include="DA\DB\IDatabase.cs" />
+    <Compile Include="DA\DB\MySQL.cs" />
+    <Compile Include="DA\DB\SqlServer.cs" />
+    <Compile Include="DA\EntityTools.cs" />
+    <Compile Include="DA\DatabaseHelper.cs" />
+    <Compile Include="DA\StoreProcedureInfo.cs" />
+    <Compile Include="DA\TransScope.cs" />
+    <Compile Include="Enc\DES3.cs" />
+    <Compile Include="Enc\PasswordMaker.cs" />
+    <Compile Include="Enc\SimpleEnc.cs" />
+    <Compile Include="Ex\DatabaseException.cs" />
+    <Compile Include="Ex\Exceptionbase.cs" />
+    <Compile Include="Ex\ExceptionFormatter.cs" />
+    <Compile Include="F\AbstractSchedule.cs" />
+    <Compile Include="F\AbstractThread.cs" />
+    <Compile Include="F\AbstractMQ.cs" />
+    <Compile Include="F\AbstractTimer.cs" />
+    <Compile Include="F\ZThreadState.cs" />
+    <Compile Include="Log\Logger.cs" />
+    <Compile Include="Log\LogInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Enc\MD5.cs" />
+    <Compile Include="REST\DesignedErrorCodeAttribute.cs" />
+    <Compile Include="REST\FormatType.cs" />
+    <Compile Include="REST\IRestExecuter.cs" />
+    <Compile Include="REST\ParameterConverter.cs" />
+    <Compile Include="REST\RestModuleBase.cs" />
+    <Compile Include="REST\RestParameterAttribute.cs" />
+    <Compile Include="REST\RestAPIClassAttribute.cs" />
+    <Compile Include="REST\RestAPIManager.cs" />
+    <Compile Include="REST\RestAPIMethodAttribute.cs" />
+    <Compile Include="REST\RestCache.cs" />
+    <Compile Include="REST\RestCacheConfiguration.cs" />
+    <Compile Include="REST\RestMethodInfo.cs" />
+    <Compile Include="REST\RestParameterException.cs" />
+    <Compile Include="REST\RestManager.cs" />
+    <Compile Include="REST\SignatureType.cs" />
+    <Compile Include="Util\BOOL.cs" />
+    <Compile Include="Util\CDATA.cs" />
+    <Compile Include="Util\Code8421.cs" />
+    <Compile Include="Util\DataObjectTools.cs" />
+    <Compile Include="Util\FileTools.cs" />
+    <Compile Include="Util\IDataObject.cs" />
+    <Compile Include="Util\IPMaskCalculator.cs" />
+    <Compile Include="Util\ListTools.cs" />
+    <Compile Include="Util\MathTools.cs" />
+    <Compile Include="Util\MessageQueueTools.cs" />
+    <Compile Include="Util\NetTools.cs" />
+    <Compile Include="Util\PinYin.cs" />
+    <Compile Include="Util\RefectingTools.cs" />
+    <Compile Include="Util\SmtpMail.cs" />
+    <Compile Include="Util\StringTools.cs" />
+    <Compile Include="Util\WebTools.cs" />
+    <Compile Include="Util\XmlReaderTools.cs" />
+    <Compile Include="Util\XmlTools.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Readme.htm" />
+    <Content Include="Res\log4net.dll" />
+    <Content Include="Res\Memcached.ClientLibrary.dll" />
+    <Content Include="Res\mysql.data.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

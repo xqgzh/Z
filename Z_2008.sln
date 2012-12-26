@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z", "Z.csproj", "{EEC5D1E0-DBDB-4C9B-87D9-F77DE2294EDC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample", "Sample\Sample.csproj", "{9004509F-C6AF-4B07-9CD5-3A9A1856D619}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinConfigManager", "WinConfigManager\WinConfigManager.csproj", "{DBFB1FE5-7CD7-42B4-98FB-57E8ED2F2592}"
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Release|.NET = Release|.NET
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EEC5D1E0-DBDB-4C9B-87D9-F77DE2294EDC}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{EEC5D1E0-DBDB-4C9B-87D9-F77DE2294EDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEC5D1E0-DBDB-4C9B-87D9-F77DE2294EDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEC5D1E0-DBDB-4C9B-87D9-F77DE2294EDC}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{EEC5D1E0-DBDB-4C9B-87D9-F77DE2294EDC}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{EEC5D1E0-DBDB-4C9B-87D9-F77DE2294EDC}.Release|.NET.ActiveCfg = Release|Any CPU
+		{EEC5D1E0-DBDB-4C9B-87D9-F77DE2294EDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEC5D1E0-DBDB-4C9B-87D9-F77DE2294EDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEC5D1E0-DBDB-4C9B-87D9-F77DE2294EDC}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{EEC5D1E0-DBDB-4C9B-87D9-F77DE2294EDC}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{9004509F-C6AF-4B07-9CD5-3A9A1856D619}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{9004509F-C6AF-4B07-9CD5-3A9A1856D619}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9004509F-C6AF-4B07-9CD5-3A9A1856D619}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9004509F-C6AF-4B07-9CD5-3A9A1856D619}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{9004509F-C6AF-4B07-9CD5-3A9A1856D619}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{9004509F-C6AF-4B07-9CD5-3A9A1856D619}.Release|.NET.ActiveCfg = Release|Any CPU
+		{9004509F-C6AF-4B07-9CD5-3A9A1856D619}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9004509F-C6AF-4B07-9CD5-3A9A1856D619}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9004509F-C6AF-4B07-9CD5-3A9A1856D619}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{9004509F-C6AF-4B07-9CD5-3A9A1856D619}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{DBFB1FE5-7CD7-42B4-98FB-57E8ED2F2592}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{DBFB1FE5-7CD7-42B4-98FB-57E8ED2F2592}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBFB1FE5-7CD7-42B4-98FB-57E8ED2F2592}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBFB1FE5-7CD7-42B4-98FB-57E8ED2F2592}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{DBFB1FE5-7CD7-42B4-98FB-57E8ED2F2592}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{DBFB1FE5-7CD7-42B4-98FB-57E8ED2F2592}.Release|.NET.ActiveCfg = Release|Any CPU
+		{DBFB1FE5-7CD7-42B4-98FB-57E8ED2F2592}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBFB1FE5-7CD7-42B4-98FB-57E8ED2F2592}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBFB1FE5-7CD7-42B4-98FB-57E8ED2F2592}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{DBFB1FE5-7CD7-42B4-98FB-57E8ED2F2592}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		VisualSVNWorkingCopyRoot = .
+	EndGlobalSection
+EndGlobal
